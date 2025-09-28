@@ -20,18 +20,18 @@ sudo apt update
 sudo apt install nginx certbot python3-certbot-nginx -y
 
 1. Basis: Let's Encrypt Webroot vorbereiten
-```bash
+bash
 sudo mkdir -p /var/www/letsencrypt/.well-known/acme-challenge
 sudo chown -R www-data:www-data /var/www/letsencrypt
 
 
 Snippet erstellen:
-```bash
+bash
 sudo nano /etc/nginx/snippets/letsencrypt.conf
 
 
 Inhalt:
-```bash
+bash
 location ^~ /.well-known/acme-challenge/ {
     root /var/www/letsencrypt;
     allow all;
