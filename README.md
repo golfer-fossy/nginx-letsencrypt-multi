@@ -3,7 +3,7 @@
 Diese Anleitung beschreibt Schritt für Schritt, wie man für neue Dienste
 (eigene Subdomains → interne IPs) per **NGINX Reverse Proxy + Let's Encrypt**
 eine abgesicherte HTTPS-Verbindung einrichtet.  
-Jede neue Seite (z. B. `homematic.golfer-fossy.selfhost.eu`) bekommt ein **eigenes Zertifikat**.
+Jede neue Seite (z. B. `DOMAIN.EU`) bekommt ein **eigenes Zertifikat**.
 
 ---
 
