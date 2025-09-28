@@ -19,18 +19,4 @@ Jede neue Seite (z. B. `DOMAIN.EU`) bekommt ein **eigenes Zertifikat**.
 sudo apt update
 sudo apt install nginx certbot python3-certbot-nginx -y
 
-1. Basis: Let's Encrypt Webroot vorbereiten
-sudo mkdir -p /var/www/letsencrypt/.well-known/acme-challenge
-sudo chown -R www-data:www-data /var/www/letsencrypt
-
-Snippet erstellen:
-bash
-sudo nano /etc/nginx/snippets/letsencrypt.conf
-
-
-Inhalt:
-bash
-location ^~ /.well-known/acme-challenge/ {
-    root /var/www/letsencrypt;
-    allow all;
-}
+sudo nano /etc/nginx/sites-available/homematic
