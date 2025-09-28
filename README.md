@@ -19,4 +19,3 @@ Jede neue Seite (z. B. `DOMAIN.EU`) bekommt ein **eigenes Zertifikat**.
 sudo apt update
 sudo apt install nginx certbot python3-certbot-nginx -y
 
-sudo nano /etc/nginx/sites-available/homematic
